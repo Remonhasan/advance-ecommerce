@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | Dashboard</title>
+  <title>E-Commerce | Admin</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -33,7 +33,7 @@
   @include('layouts.admin_layout.admin_header')
 
   @include('layouts.admin_layout.admin_sidebar')
-  
+
   @yield('content')
 
   @include('layouts.admin_layout.admin_footer')
@@ -80,5 +80,6 @@
 <script src="{{ url('js/admin_js/pages/dashboard.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{ url('js/admin_js/demo.js')}}"></script>
+<script src="{{ url('js/admin_js/admin_script.js')}}"></script>
 </body>
 </html>
