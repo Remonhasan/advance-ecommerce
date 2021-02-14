@@ -6,6 +6,7 @@
   <title>E-Commerce | Admin</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="{{ url('plugins/fontawesome-free/css/all.min.css')}}">
   <!-- Ionicons -->
@@ -81,5 +82,7 @@
 <!-- AdminLTE for demo purposes -->
 <script src="{{ url('js/admin_js/demo.js')}}"></script>
 <script src="{{ url('js/admin_js/admin_script.js')}}"></script>
+<script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
+{!! Toastr::message() !!}
 </body>
 </html>
