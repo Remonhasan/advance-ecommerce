@@ -30,6 +30,10 @@ Route::prefix('/admin')->namespace('Admin')->group(function(){
         Route::get('logout','AdminController@logout');
         Route::post('check-current-pwd','AdminController@chkCurrentPassword');
         Route::match(['get','post'],'update-admin-details','AdminController@updateAdminDetails');
+
+        // sections route
+        Route::get('sections','SectionController@sections');
+        Route::post('update-section-status','SectionController@updateSectionStatus');
     });
 
 
